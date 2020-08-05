@@ -1,6 +1,7 @@
 # AutomatedTests
 
 Selenium is a test automation framework that enables you to test your UI.
+If you are unclear on what testing types are visit [Selenium Docs Types of testing](https://www.selenium.dev/documentation/en/introduction/types_of_testing/)
 Let's start by the simples example:
 
 ## Basic navigation
