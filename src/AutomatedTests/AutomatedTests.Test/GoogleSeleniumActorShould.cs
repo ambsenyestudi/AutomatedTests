@@ -20,5 +20,12 @@ namespace AutomatedTests.Test
             var success = sut.Ask("Receta tortilla patatas");
             Assert.True(success);
         }
+        [Fact]
+        public void CloseAfterFindingTortillaPatatas()
+        {
+           sut.Ask("Receta tortilla patatas");
+           var success = sut.Close();
+           Assert.True(success);
+        }
     }
 }

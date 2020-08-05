@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -35,12 +36,18 @@ namespace Selenium.NetCore
 
         private IWebElement FindQuestionInput()
         {
-            var questionInput = driver.FindElementByName(INPUT_QUESTION_NAME);
+            var questionInput = FindElement(By.Name(INPUT_QUESTION_NAME));
             if(questionInput==null)
             {
                 throw new NotFoundException($"{INPUT_QUESTION_NAME} not present on site");
             }
             return questionInput;
+        }
+
+        private IWebElement FindElement(By by)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            return wait.Until(d => d.FindElement(by));
         }
     }
 }

@@ -24,6 +24,13 @@ namespace Selenium.NetCore
                 return false;
             }
         }
+        public bool Close()
+        {
+            driver.Close();
+            driver.Quit();
+            var isValid = driver.SessionId == null;
+            return isValid;
+        }
             
     }
 }
