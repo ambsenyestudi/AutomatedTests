@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Selenium.NetCore
 {
@@ -44,10 +42,6 @@ namespace Selenium.NetCore
             return questionInput;
         }
 
-        private IWebElement FindElement(By by)
-        {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-            return wait.Until(d => d.FindElement(by));
-        }
+        
     }
 }

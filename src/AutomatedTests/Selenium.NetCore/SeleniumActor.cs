@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace Selenium.NetCore
@@ -24,6 +26,12 @@ namespace Selenium.NetCore
                 return false;
             }
         }
+        protected IWebElement FindElement(By by)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            return wait.Until(d => d.FindElement(by));
+        }
+
         public bool Close()
         {
             driver.Close();
