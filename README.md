@@ -23,9 +23,9 @@ In order to perform the actions involved in asking google something we need to:
 ## Round trip
 
 Up to now we have relayed on Google to be fast enough to provide us with answers.
-Unfortunately, that is not always the case, specially when *testing inhouse applications*, 
+Unfortunately, that is not always the case, specially when **testing inhouse applications**, 
 so for thoroughness let's wait some seconds before typing at the input and then close our driver
 
 ## Waits an bys
 
-Now let's use som Expected conditions for our waits to be more efective and find out more about By class.
+Now let's use some *Expected Conditions* for our waits to be more effective and find out more about By class.
