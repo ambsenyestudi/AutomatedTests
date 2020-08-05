@@ -5,8 +5,8 @@ namespace Selenium.NetCore
 {
     public class SeleniumActor
     {
-        public const string GOOGLE_URL = "http://www.google.com";
-        private readonly ChromeDriver driver;
+        
+        protected readonly ChromeDriver driver;
 
         public SeleniumActor()
         {
@@ -24,7 +24,6 @@ namespace Selenium.NetCore
                 return false;
             }
         }
-        public bool NavigateToGoogle() =>
-            NavigateTo(GOOGLE_URL);
+            
     }
 }

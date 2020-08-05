@@ -15,7 +15,8 @@ namespace AutomatedTests.Test
         [Fact]
         public void HitGoogle()
         {
-            var success = sut.NavigateToGoogle();
+            var url = GoogleSeleniumActor.GOOGLE_URL;
+            var success = sut.NavigateTo(url);
             Assert.True(success);
         }
     }
