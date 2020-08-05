@@ -19,3 +19,9 @@ In order to perform the actions involved in asking google something we need to:
 >- Identify an input of type text
 >- Type something in input
 >- Wait for confirmation that what we ask is there
+
+## Round trip
+
+Up to now we have relayed on google to be fast enough to provide us with answers.
+That unfortunately is not always the case when testing inhouse applications, 
+so for thoroughness let's wait some seconds before typing at the input and then close our driver
