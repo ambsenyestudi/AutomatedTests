@@ -29,3 +29,9 @@ so for thoroughness let's wait some seconds before typing at the input and then 
 ## Waits an bys
 
 Now let's use some *Expected Conditions* for our waits to be more effective and find out more about By class.
+
+## Page Object Model
+
+On the Selenium Docs there is a very interesting notion at the [On test automation section](https://www.selenium.dev/documentation/en/introduction/on_test_automation/),
+Page Object Model is a pattern used in test automation that makes your test more readeable.
+Let's see some examples.
