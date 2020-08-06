@@ -1,5 +1,4 @@
 using Selenium.NetCore;
-using System;
 using Xunit;
 
 namespace AutomatedTests.Test

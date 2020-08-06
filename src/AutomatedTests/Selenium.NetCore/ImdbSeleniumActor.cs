@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Linq;
-using System.Threading.Tasks;
 using extras = SeleniumExtras.WaitHelpers;
 namespace Selenium.NetCore
 {
