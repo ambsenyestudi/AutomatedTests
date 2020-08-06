@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AutomatedTests.BEDCA.Domain\AutomatedTests.BEDCA.Domain.csproj" />
-    <ProjectReference Include="..\Selenium.NetCore\Selenium.NetCore.csproj" />
   </ItemGroup>
 
 </Project>
